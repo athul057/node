@@ -1,1 +1,29 @@
-One of the important
+One of the important component in node is `http`
+
+`const http = require('http');`
+
+```javascript
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+ // console.log(req);
+ // console.log(req.method, req.url);
+ // process.exit();
+
+ console.log(res);
+ res.setHeader('Content-Type', 'text/html');
+ res.write('<html>')
+ res.write('<h1> Hello </h1>')
+ res.write('<body> HIIII</body>');
+ res.write('</head>');
+ res.end();
+
+})
+
+server.listen(3000)
+```
+here `req` and `res` will give us a  giant list of methods...
+
+through `res.write` method we can write html into the screen...
+
+![alt text](https://github.com/[athul057]/[node]/[main]/nodeintro/imgs/image.jpg?raw=true)
