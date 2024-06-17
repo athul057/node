@@ -6,9 +6,9 @@ One of the important component in node is `http`
 const http = require('http');
 
 const server = http.createServer((req, res) => {
- // console.log(req);
- // console.log(req.method, req.url);
- // process.exit();
+ console.log(req);
+ console.log(req.method, req.url);
+ //process.exit();
 
  console.log(res);
  res.setHeader('Content-Type', 'text/html');
@@ -22,8 +22,13 @@ const server = http.createServer((req, res) => {
 
 server.listen(3000)
 ```
+
+`process.exit()`
+
+through this we can end the running of server.
+
 here `req` and `res` will give us a  giant list of methods...
 
 through `res.write` method we can write html into the screen...
 
-![alt text](https://github.com/[athul057]/[node]/[main]/nodeintro/imgs/node.PNG?raw=true)
+![node_in_browser](/nodeintro/imgs/node.PNG?raw=true)
