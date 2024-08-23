@@ -1,0 +1,6 @@
+exports.errorData = (req, res) => {
+ //In the render just tell the filename thats all....
+ //This render method will alsway check the view enginer we defined and the paht we defined above.....
+
+ res.status(404).render('error', { pageTitle: 'Page Not Found' });
+}
